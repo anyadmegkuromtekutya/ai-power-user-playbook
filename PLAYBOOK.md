@@ -1,6 +1,6 @@
 # AI Power User Playbook
 
-_Real tactics that experienced AI users figure out through trial and error._
+_Real tactics that experienced AI users figure out through trial and error_
 
 ---
 
