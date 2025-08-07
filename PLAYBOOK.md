@@ -4,24 +4,23 @@ _Real tactics that experienced AI users figure out through trial and error_
 
 ---
 
-## 📍 Table of Contents
+## Table of Contents
 
-1. [🧠 Conversation Management](#1--conversation-management)
-2. [🔍 Prompt Testing & Comparison](#2--prompt-testing--comparison)
-3. [📋 Prompt Structuring](#3--prompt-structuring)
-4. [🛡️ Accuracy & Hallucination Control](#4--accuracy--hallucination-control)
-5. [🤔 Prompting the AI to Be Smarter](#5--prompting-the-ai-to-be-smarter)
-6. [🧠 Context & Memory Management](#6--context--memory-management)
-7. [🧩 When Things Go Wrong](#7--when-things-go-wrong)
-8. [🔄 Continuity & Long-Term Use](#8--continuity--long-term-use)
-9. [🧪 Emergency Fixes](#-emergency-fixes)
-10. [💬 Power Prompts (Copy-Paste)](#-power-prompts-copy-paste)
+1. [Conversation Management](#1-conversation-management)
+2. [Prompt Testing & Comparison](#2-prompt-testing--comparison)
+3. [Prompt Structuring](#3-prompt-structuring)
+4. [Hallucination Control](#4-hallucination-control)
+5. [Prompting the AI to Be Smarter](#5-prompting-the-ai-to-be-smarter)
+6. [Context & Memory Management](#6-context--memory-management)
+7. [When Things Go Wrong](#7-when-things-go-wrong)
+8. [Continuity & Long-Term Use](#8-continuity--long-term-use)
+9. [Power Prompts (Copy-Paste)](#9-power-prompts-copy-paste)
 
 ---
 
-## 1. 🧠 Conversation Management
+## 1. Conversation Management
 
-### 🔄 Start Fresh, Don’t Fight It
+### Start Fresh, Don’t Fight It
 
 If you're 3+ messages deep and still not getting what you want, stop. Open a new tab and rewrite your prompt from scratch.
 Fresh context beats confused memory.
@@ -31,11 +30,11 @@ Fresh context beats confused memory.
 ✅ [New tab] "Write a technical overview, not marketing copy"
 ```
 
-### ⏩ Use "Continue" for Cutoffs
+### Use "Continue" for Cutoffs
 
 When responses get clipped, just type: `continue`. That’s it. No need to be polite — the model picks up where it left off.
 
-### 📍 Manually Re-anchor When Switching Tasks
+### Manually Re-anchor When Switching Tasks
 
 Use this structure to reset context clearly:
 
@@ -48,9 +47,9 @@ Request: [New prompt]
 
 ---
 
-## 2. 🔍 Prompt Testing & Comparison
+## 2. Prompt Testing & Comparison
 
-### 🗂️ Compare Results in Parallel Tabs
+### Compare Results in Parallel Tabs
 
 Don’t guess which prompt will work best — test a few variations at once.
 
@@ -60,15 +59,15 @@ Tab 2: "Explain ML for beginners"
 Tab 3: "What is ML? Use simple analogies"
 ```
 
-### ✍️ Edit, Don’t Argue
+### Edit, Don’t Argue
 
 If it didn’t do what you wanted, change the input. Explaining what it did wrong rarely helps. Rewriting your prompt does.
 
 ---
 
-## 3. 📋 Prompt Structuring
+## 3. Prompt Structuring
 
-### 🧱 Use Code Blocks for Clarity
+### Use Code Blocks for Clarity
 
 Put structured info (lists, templates, tables) in triple backticks (\`\`\`) so formatting doesn't break and copy-paste works cleanly.
 
@@ -83,7 +82,7 @@ Try: "List 3 options like this:"
 3. Option C: [description]
 ```
 
-### 🔢 Break It Into Steps
+### Break It Into Steps
 
 AI handles multi-step tasks better when they’re spelled out clearly.
 
@@ -92,7 +91,7 @@ AI handles multi-step tasks better when they’re spelled out clearly.
 ✅ "1. Identify top trends. 2. Explain causes. 3. Recommend one action per trend."
 ```
 
-### 🏗️ Use Prompt Templates
+### Use Prompt Templates
 
 Reusing a solid structure makes complex requests easier and more consistent.
 
@@ -106,9 +105,9 @@ Constraints: [Keep it brief, no jargon, etc.]
 
 ---
 
-## 4. 🛡️ Accuracy & Hallucination Control
+## 4. Hallucination Control
 
-### ❗ Add Guardrails
+### Add Guardrails
 
 Cut down on errors with simple instructions:
 
@@ -117,7 +116,7 @@ Cut down on errors with simple instructions:
 * "Avoid jargon. Use simple language."
 * "Keep it under 200 words."
 
-### 🎯 Control Tone
+### Control Tone
 
 Be explicit:
 
@@ -127,9 +126,9 @@ Be explicit:
 
 ---
 
-## 5. 🤔 Prompting the AI to Be Smarter
+## 5. Prompting the AI to Be Smarter
 
-### 💡 Ask for a Self-Review
+### Ask for a Self-Review
 
 After a first draft, follow up with:
 
@@ -137,12 +136,12 @@ After a first draft, follow up with:
 * "What’s missing from this analysis?"
 * "What would a critic say?"
 
-### 🧠 Get Help Writing Prompts
+### Get Help Writing Prompts
 
 Stuck writing the prompt? Ask:
 "Rewrite this to be clearer and more specific: \[paste your messy prompt]"
 
-### 🔍 Challenge the AI’s Response
+### Challenge the AI’s Response
 
 Push back, even if you’re unsure:
 
@@ -152,7 +151,7 @@ Push back, even if you’re unsure:
 
 ---
 
-## 6. 🧠 Context & Memory Management
+## 6. Context & Memory Management
 
 ### 🔗 Nudge Back to Earlier Points
 
@@ -162,7 +161,7 @@ Help the AI recall:
 * "Building on that insight from before..."
 * "Remember the example about \[topic]?"
 
-### 🧾 Check for Misalignment
+### Check for Misalignment
 
 When things go off track, ask:
 
@@ -172,7 +171,7 @@ When things go off track, ask:
 
 If it can’t answer clearly — re-anchor.
 
-### 🏷️ Separate Context from Instructions
+### Separate Context from Instructions
 
 Use tags to distinguish background info from the actual task:
 
@@ -188,9 +187,9 @@ Now write a summary with that in mind.
 
 ---
 
-## 7. 🧩 When Things Go Wrong
+## 7. When Things Go Wrong
 
-### 🎯 Give Direct Feedback
+### Give Direct Feedback
 
 Don’t be soft — be clear.
 
@@ -200,7 +199,7 @@ Don’t be soft — be clear.
 ✅ "That’s the wrong format. I need a list, not a paragraph."
 ```
 
-### 🔁 Use Manual Version Control
+### Use Manual Version Control
 
 When AI edits go sideways:
 
@@ -212,7 +211,7 @@ No need to start over — just take control.
 
 ---
 
-## 8. 🔄 Continuity & Long-Term Use
+## 8. Continuity & Long-Term Use
 
 ### 🗄️ Save Outside the Chat
 
@@ -223,7 +222,7 @@ Build your personal toolkit:
 * Notes on which prompts worked best
 * Summaries of complex conversations
 
-### 📸 Snapshot & Summarize
+### Snapshot & Summarize
 
 When chats get long or messy:
 
@@ -231,25 +230,13 @@ When chats get long or messy:
 2. In a new chat: “Summarize this entire conversation”
 3. Save the summary for context in future threads
 
-### 🔗 Chain Context Between Sessions
+### Chain Context Between Sessions
 
 Instead of starting from scratch, paste in your best previous output and build from there.
 
 ---
 
-## 🧪 Quick Reference
-
-### 🛠️ Emergency Fixes
-
-* **Stuck loop?** → Open a new tab
-* **Cut off response?** → Type `continue`
-* **Lost context?** → “What’s our goal again?”
-* **Generic answers?** → Add constraints + examples
-* **Going off track?** → Re-anchor with a mini summary
-
----
-
-## 💬 Power Prompts (Copy-Paste)
+## 9. Power Prompts (Copy-Paste)
 
 **Clarity & Accuracy:**
 
@@ -276,7 +263,7 @@ Instead of starting from scratch, paste in your best previous output and build f
 
 ---
 
-## 📣 Got a tactic that works?
+## Got a tactic that works?
 
 Help grow the community playbook.
-Open a pull request or submit an issue 💡
+Open a pull request or submit an issue!
