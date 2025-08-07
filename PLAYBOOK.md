@@ -1,6 +1,6 @@
 # AI Power User Playbook
 
-_The unspoken tricks and strategies that experienced AI users learn through trial and error_
+_Real tactics that experienced AI users figure out through trial and error._
 
 ---
 
