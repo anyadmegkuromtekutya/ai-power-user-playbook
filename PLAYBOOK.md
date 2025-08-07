@@ -1,4 +1,4 @@
-# 🚀 AI Power User Playbook
+# AI Power User Playbook
 
 _The unspoken tricks and strategies that experienced AI users learn through trial and error_
 
