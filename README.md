@@ -4,7 +4,7 @@ This is a community-driven playbook of practical strategies for using AI agents 
 
 💡 Success with AI isn’t about having the best tools. It’s about learning the hidden tricks power users figure out over time.
 
-This project began as a [LinkedIn post](https://www.linkedin.com/posts/YOUR-POST-HERE) after building my first AI agent prototype. It struck a chord — so I’m publishing this as a shared resource and evolving it in public.
+This project began as a [LinkedIn post](https://www.linkedin.com/posts/winklerjenna_building-my-first-ai-agent-prototype-taught-activity-7359006711648509953-DBEX?utm_source=share&utm_medium=member_desktop&rcm=ACoAABfwn64BEabFM1gqnsCfTZJjkQdEtjQj6vg) after building my first AI agent prototype. It struck a chord — so I’m publishing this as a shared resource and evolving it in public.
 
 ## ✨ Why this exists
 
