@@ -4,6 +4,21 @@ _Real tactics that experienced AI users figure out through trial and error_
 
 ---
 
+## 📍 Table of Contents
+
+1. [🧠 Conversation Management](#1--conversation-management)
+2. [🔍 Prompt Testing & Comparison](#2--prompt-testing--comparison)
+3. [📋 Prompt Structuring](#3--prompt-structuring)
+4. [🛡️ Accuracy & Hallucination Control](#4--accuracy--hallucination-control)
+5. [🤔 Prompting the AI to Be Smarter](#5--prompting-the-ai-to-be-smarter)
+6. [🧠 Context & Memory Management](#6--context--memory-management)
+7. [🧩 When Things Go Wrong](#7--when-things-go-wrong)
+8. [🔄 Continuity & Long-Term Use](#8--continuity--long-term-use)
+9. [🧪 Emergency Fixes](#-emergency-fixes)
+10. [💬 Power Prompts (Copy-Paste)](#-power-prompts-copy-paste)
+
+---
+
 ## 1. 🧠 Conversation Management
 
 ### 🔄 Start Fresh, Don’t Fight It
