@@ -10,10 +10,15 @@ Most people know how to use AI tools but struggle to get consistent results. It'
 
 ## What You'll Find
 
-- 🗂️ Run the same prompt in 3 tabs to compare AI's natural variation
-- 🔢 Break requests into numbered steps: AI follows logic better
-- ❗ Add "don't guess" to any factual request → Reduces hallucinations
-- 🧠 Ask "What's the goal here?" to check if AI understands your intent
+- 🔄 When to reset a conversation vs. just nudging the context
+- 🗂️ Run the same prompt in multiple tabs to compare responses  
+- ✍️ Edit and re-run prompts instead of long back-and-forth corrections
+- 📋 Use code blocks to keep answers organized (even for non-code)
+- ⏩ Type "continue" when AI cuts off mid-response
+- 🔢 Break instructions into numbered steps to guide AI logic
+- ❗ Add "don't guess" or "cite sources" to reduce hallucinations
+- 🤔 Ask AI to critique and improve its own answers
+- 💡 Get AI to help you craft better prompts
 
 **[View Full Playbook →](PLAYBOOK.md)**
 
