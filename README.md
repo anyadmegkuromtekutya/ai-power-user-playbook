@@ -8,7 +8,7 @@ Started as a [LinkedIn post](https://www.linkedin.com/posts/winklerjenna_buildin
 
 Most people know how to use AI tools but struggle to get consistent results. It's not about the tools - it's about knowing the techniques that experienced users figure out over time.
 
-## What You'll Find
+## Tips You'll Find
 
 - 🔄 When to reset a conversation vs. just nudging the context
 - 🗂️ Run the same prompt in multiple tabs to compare responses  
