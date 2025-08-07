@@ -1,6 +1,6 @@
 # AI Power User Playbook
 
-*Real tactics that experienced AI users figure out through trial and error.*
+*Real tactics that experienced AI users figure out through trial and error*
 
 Started as a [LinkedIn post](https://www.linkedin.com/posts/winklerjenna_building-my-first-ai-agent-prototype-taught-activity-7359006711648509953-DBEX?utm_source=share&utm_medium=member_desktop&rcm=ACoAABfwn64BEabFM1gqnsCfTZJjkQdEtjQj6vg) about the invisible techniques that make AI actually useful.
 
