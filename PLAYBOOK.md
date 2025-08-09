@@ -1,269 +1,383 @@
 # AI Power User Playbook
 
-_Real tactics that experienced AI users figure out through trial and error_
+*Real tactics that experienced AI users figure out through trial and error*
 
 ---
 
-## Table of Contents
+## Find What You Need
 
-1. [Conversation Management](#1-conversation-management)
-2. [Prompt Testing & Comparison](#2-prompt-testing--comparison)
-3. [Prompt Structuring](#3-prompt-structuring)
-4. [Hallucination Control](#4-hallucination-control)
-5. [Prompting the AI to Be Smarter](#5-prompting-the-ai-to-be-smarter)
-6. [Context & Memory Management](#6-context--memory-management)
-7. [When Things Go Wrong](#7-when-things-go-wrong)
-8. [Continuity & Long-Term Use](#8-continuity--long-term-use)
-9. [Power Prompts (Copy-Paste)](#9-power-prompts-copy-paste)
+### Just starting with AI?
+- [Crafting Better Prompts](#crafting-better-prompts) - Templates, structure, testing variations
+- [Troubleshooting Guide](#troubleshooting-guide) - Quick fixes for common problems  
+- [Copy-Paste Power Prompts](#copy-paste-power-prompts) - Ready-to-use phrases
+
+### Getting poor results?
+- [When Results Are Poor](#when-results-are-poor) - Fix generic, wrong, or unhelpful answers
+- [Reset strategies](#reset-rather-than-argue) - When to start over vs. keep trying
+- [Stop hallucinations](#stop-hallucinations-with-guardrails) - Prevent confident-sounding nonsense
+- [Control tone](#add-specific-constraints) - Get the right style and voice
+
+### Working on something important?
+- [Research & Verification](#research--verification) - Multi-model fact-checking for accuracy
+- [Multi-model verification](#never-trust-one-ai-for-important-information) - Compare answers across different AI tools
+- [Managing Complex Work](#managing-complex-work) - Context management for long projects
+- [Context management](#context-management) - Help AI remember what matters
+- [Memory tactics](#context-management) - Get AI to recall earlier points
+- [Power User Mindset](#power-user-mindset) - Treat AI as research partner, not final authority
+
+### Testing and improvement
+- [Test variations](#test-multiple-variations) - Try multiple prompts simultaneously
+- [Make AI self-improve](#make-ai-self-improve) - Get AI to critique its own work
+
+### Common problems
+- **Response cut off** → Type `continue` ([see guide](#troubleshooting-guide))
+- **Stuck in bad loop** → New tab, rewrite prompt ([reset strategies](#reset-rather-than-argue))
+- **Lost focus** → "What's our main goal here?" ([check alignment](#check-for-misalignment))
+- **Wrong format** → Use code blocks to show exact structure ([formatting tips](#use-code-blocks-for-structure))
+- **Sounds too AI-like** → Add style examples ([control tone](#add-specific-constraints))
+- **AI forgetting earlier points** → Memory tactics and re-anchoring ([context management](#context-management))
+- **Artifact acting buggy** → Reset artifact when it gets messy ([reset artifact](#reset-artifact-when-it-gets-messy))
 
 ---
 
-## 1. Conversation Management
+## When Results Are Poor
 
-### Start Fresh, Don’t Fight It
+*The AI gave you something, but it's not what you need*
 
-If you're 3+ messages deep and still not getting what you want, stop. Open a new tab and rewrite your prompt from scratch.
-Fresh context beats confused memory.
+### Reset Rather Than Argue
+If you're 3+ messages deep without success, don't keep explaining what's wrong. Open a new chat and rewrite your prompt from scratch.
+
+**Why this works:** Fresh context beats confused memory. Each exchange can muddy the water.
 
 ```
 ❌ "No, that's not what I meant. Let me try again..."
-✅ [New tab] "Write a technical overview, not marketing copy"
+✅ [New tab] "Write a technical overview for engineers, not marketing copy"
 ```
 
-### Use "Continue" for Cutoffs
+### Edit Your Prompt, Don't Explain the Problem
+When the output misses the mark, resist the urge to explain what went wrong. Instead, modify your original request to be more specific.
 
-When responses get clipped, just type: `continue`. That’s it. No need to be polite — the model picks up where it left off.
-
-### Manually Re-anchor When Switching Tasks
-
-Use this structure to reset context clearly:
+**Why this works:** AI responds better to clear instructions than to corrections.
 
 ```
-Context: [What we’re working on]  
-Goal: [What I need now]  
-Previous: [Key info so far]  
-Request: [New prompt]
+❌ "That's too technical. Make it simpler."
+✅ "Explain this using analogies a 12-year-old would understand."
 ```
+
+### Add Specific Constraints
+Generic answers come from generic prompts. Add boundaries to get focused results.
+
+**Essential constraints to try:**
+- **Audience:** "Write for software developers" or "Explain to a non-technical manager"
+- **Length:** "Keep under 200 words" or "Write exactly 5 bullet points"
+- **Tone:** "Neutral and factual" or "Conversational but professional"
+- **Format:** "Use numbered steps" or "Create a comparison table"
+
+### Stop Hallucinations with Guardrails
+Add these phrases to reduce confident-sounding nonsense:
+
+- "If you're unsure about any facts, say so explicitly"
+- "Only use information you're confident about"
+- "If you need to speculate, clearly label it as speculation"
+
+### Reset Artifact When It Gets Messy
+Overwhelmed by too many versions of your artifact or canvas? Notice certain parts aren't updating when the model says they are?
+
+**Solution:** Ask the model to start over with a NEW artifact/canvas to reset without losing conversation history.
+
+```
+✅ "Create a new artifact with all this content - some sections aren't updating properly"
+✅ "Start fresh with a new canvas that incorporates all our changes"
+```
+
+**Why this works:** Technical glitches can cause partial updates to fail, but the conversation context remains intact for a clean restart.
 
 ---
 
-## 2. Prompt Testing & Comparison
+## Research & Verification
 
-### Compare Results in Parallel Tabs
+*When accuracy matters more than speed*
 
-Don’t guess which prompt will work best — test a few variations at once.
+### Never Trust One AI for Important Information
+AI models sound confident even when wrong. They can have different training data, biases, or reasoning approaches.
 
-```
-Tab 1: "Explain machine learning"  
-Tab 2: "Explain ML for beginners"  
-Tab 3: "What is ML? Use simple analogies"
-```
+**The multi-model verification process:**
 
-### Edit, Don’t Argue
+1. **Ask the same question** in 2-3 different AI tools (ChatGPT, Claude, Gemini, etc.)
+2. **Compare their answers** - look for differences in facts, tone, or perspective
+3. **Use disagreements as prompts:** "ChatGPT says X, but Claude says Y - which is more accurate and why?"
+4. **Challenge confident responses:** "What evidence would contradict this view?"
 
-If it didn’t do what you wanted, change the input. Explaining what it did wrong rarely helps. Rewriting your prompt does.
+### Research-Specific Prompts
+Use these to get more balanced information:
+
+- "Show me multiple perspectives on this topic"
+- "What are the strongest counterarguments to this position?"
+- "Rate your confidence in this information 1-10 and explain your reasoning"
+- "What would someone who disagrees with this say?"
+
+### Cross-Reference Strategy
+For critical research:
+1. Get AI to provide sources or reasoning
+2. Spot-check key claims with actual sources
+3. Look for consensus across multiple AI responses
+4. Flag areas where AIs disagree for manual verification
 
 ---
 
-## 3. Prompt Structuring
+## Managing Complex Work
 
-### Use Code Blocks for Clarity
+*Long projects, detailed analysis, multi-step tasks*
 
-Put structured info (lists, templates, tables) in triple backticks (\`\`\`) so formatting doesn't break and copy-paste works cleanly.
+### Context Management
+AI has limited memory, but you can help it remember what matters.
+
+**Re-anchor when switching topics:**
+```
+Context: [Brief summary of what we're working on]
+Goal: [What I need right now]  
+Previous key points: [2-3 most important insights so far]
+New request: [Your specific ask]
+```
+
+**Nudge back to earlier insights:**
+- "Earlier you mentioned [specific point] - build on that"
+- "Remember the example about [topic]? Apply that approach here"
+- "You identified three main issues before - focus on issue #2"
+
+### Separate Background from Instructions
+Use clear markers to distinguish context from tasks:
 
 ```
-Instead of: "Give me 3 options"  
-Try: "List 3 options like this:"
+<background>
+We're redesigning the checkout flow for an e-commerce site. 
+Current conversion rate is 2.3%. Users abandon most at payment step.
+</background>
+
+<task>
+Generate 5 specific hypotheses for why payment completion fails, 
+formatted as testable questions.
+</task>
 ```
 
+### Break Complex Tasks into Steps
+Don't ask for everything at once. AI handles sequential steps better than complex multi-part requests.
+
 ```
-1. Option A: [description]  
-2. Option B: [description]  
-3. Option C: [description]
+❌ "Analyze this data, identify trends, and give me recommendations with implementation plans"
+
+✅ "Step 1: What are the top 3 trends in this data?"
+   [Get response]
+   "Step 2: For trend #1, what's likely causing it?"
+   [Get response]  
+   "Step 3: Give me one specific action to address this cause"
+```
+
+### Save Key Outputs
+Don't rely on chat history for important work:
+- Copy prompt templates that work well
+- Save outputs you might reuse or reference
+- Note which specific phrasings get the best results
+- Keep summaries of long conversations for future context
+
+### Snapshot & Summarize
+When chats get long or messy:
+
+1. Copy the whole thread
+2. In a new chat: "Summarize this entire conversation"
+3. Save the summary for context in future threads
+
+### Chain Context Between Sessions
+Instead of starting from scratch, paste in your best previous output and build from there.
+
+---
+
+## Crafting Better Prompts
+
+*Getting it right from the start*
+
+### Test Multiple Variations
+Don't guess which approach will work best. Try several versions simultaneously in different tabs:
+
+```
+Tab 1: "Explain quantum computing"
+Tab 2: "What is quantum computing? Use simple analogies"  
+Tab 3: "Quantum computing for software engineers - focus on practical implications"
+```
+
+### Use a Consistent Template
+Having a go-to structure makes complex requests clearer:
+
+```
+Context: [What's happening/background]
+Task: [Exactly what you want done]
+Audience: [Who this is for]
+Format: [How you want it structured]
+Constraints: [Length, tone, what to avoid]
+Example: [Optional - show what good looks like]
+```
+
+### Use Code Blocks for Structure
+Put any structured information in code blocks (```). This prevents formatting issues and makes copy-paste cleaner:
+
+```
+Instead of: "Give me 3 options"
+Try: "Give me 3 options in this format:
+
+Option 1: [Name] - [Description] - [Pros/Cons]
+Option 2: [Name] - [Description] - [Pros/Cons]
+Option 3: [Name] - [Description] - [Pros/Cons]"
 ```
 
 ### Break It Into Steps
-
-AI handles multi-step tasks better when they’re spelled out clearly.
+AI handles multi-step tasks better when they're spelled out clearly.
 
 ```
 ❌ "Analyze this and give recommendations"  
 ✅ "1. Identify top trends. 2. Explain causes. 3. Recommend one action per trend."
 ```
 
-### Use Prompt Templates
+### Make AI Self-Improve
+Get better results by asking AI to critique and refine its own work:
 
-Reusing a solid structure makes complex requests easier and more consistent.
-
-```
-Context: [What’s going on]  
-Task: [What I want you to do]  
-Example: [Optional example]  
-Output: [Format I want]  
-Constraints: [Keep it brief, no jargon, etc.]
-```
-
----
-
-## 4. Hallucination Control
-
-### Add Guardrails
-
-Cut down on errors with simple instructions:
-
-* "If you're unsure, say so — don’t guess."
-* "Cite sources for any factual claims."
-* "Avoid jargon. Use simple language."
-* "Keep it under 200 words."
-
-### Control Tone
-
-Be explicit:
-
-* "Write like you're explaining to a colleague."
-* "Use a neutral tone — no sales language."
-* "Match the tone of this: \[paste sample]"
-
----
-
-## 5. Prompting the AI to Be Smarter
-
-### Ask for a Self-Review
-
-After a first draft, follow up with:
-
-* "What could be improved here?"
-* "What’s missing from this analysis?"
-* "What would a critic say?"
+**After getting a first response:**
+- "What could be improved in this analysis?"
+- "What important aspects are missing?"
+- "How would a subject matter expert critique this?"
+- "Rewrite this to be more actionable"
 
 ### Get Help Writing Prompts
-
 Stuck writing the prompt? Ask:
-"Rewrite this to be clearer and more specific: \[paste your messy prompt]"
-
-### Challenge the AI’s Response
-
-Push back, even if you’re unsure:
-
-* "That doesn’t seem complete — double-check?"
-* "What would someone who disagrees say?"
-* "Are you missing any key points?"
+"Rewrite this to be clearer and more specific: [paste your messy prompt]"
 
 ---
 
-## 6. Context & Memory Management
+## Troubleshooting Guide
 
-### 🔗 Nudge Back to Earlier Points
+*Quick fixes for common problems*
 
-Help the AI recall:
+### Common Problems
 
-* "Earlier you mentioned..."
-* "Building on that insight from before..."
-* "Remember the example about \[topic]?"
+| **Problem** | **Quick Fix** |
+|-------------|---------------|
+| **Response cut off mid-sentence** | Type `continue` (that's it - no need to be polite) |
+| **Stuck in a loop of bad responses** | Open new tab, rewrite prompt completely |
+| **Forgetting earlier conversation** | "Summarize what we've covered so far" then re-anchor |
+| **Too generic/corporate sounding** | Add: "Write in the style of [specific person/publication]" + paste example |
+| **Wrong format** | Use code blocks to show exact format you want |
+| **Sounds too AI-like** | Add: "Use conversational tone, avoid buzzwords" |
 
 ### Check for Misalignment
+When AI goes off track, ask:
 
-When things go off track, ask:
+- "What's our main goal here?"
+- "What problem are we trying to solve?"  
+- "Summarize the key points from our discussion"
 
-* "What’s our main goal here?"
-* "Summarize what we’ve covered so far."
-* "What are we trying to solve?"
+**If it can't answer clearly, re-anchor with context.**
 
-If it can’t answer clearly — re-anchor.
+### Manual Version Control
+When AI edits make things worse:
+1. Copy the best version to a separate document
+2. Make your own edits
+3. Paste the improved version back to continue from there
 
-### Separate Context from Instructions
-
-Use tags to distinguish background info from the actual task:
-
-```
-<background>  
-Here’s the context from our last project...  
-</background>  
-
-<instruction>  
-Now write a summary with that in mind.  
-</instruction>
-```
-
----
-
-## 7. When Things Go Wrong
+**Don't let AI iterate on broken output - take control when needed.**
 
 ### Give Direct Feedback
-
-Don’t be soft — be clear.
+Don't be soft — be clear.
 
 ```
 ❌ "Hmm, that's not quite it..."  
 ✅ "This missed the point — I need X, not Y."  
-✅ "That’s the wrong format. I need a list, not a paragraph."
+✅ "That's the wrong format. I need a list, not a paragraph."
 ```
 
-### Use Manual Version Control
+---
 
-When AI edits go sideways:
+## Power User Mindset
 
-1. Copy the best version to a note.
-2. Edit it yourself.
-3. Paste it back in to continue.
+### Treat AI as a Research Partner, Not Final Authority
+- Question its reasoning and ask for sources
+- Test its answers with follow-up questions
+- Compare responses across different AI tools
+- Verify important claims independently
 
-No need to start over — just take control.
+### Spend More Time on Important Decisions
+- **Quick tasks:** Simple, direct prompts are fine
+- **Important work:** Invest time in prompt crafting and multi-model checking
+- **Critical decisions:** Always verify key facts outside of AI
+
+### Be Direct, Not Polite
+AI doesn't have feelings. Clear, specific feedback works better than soft language:
+
+```
+❌ "This is pretty good, but maybe could you possibly make it a bit more focused?"
+✅ "Focus only on the financial impact. Remove the background sections."
+```
+
+### Challenge the AI's Response
+Push back, even if you're unsure:
+
+- "That doesn't seem complete — double-check?"
+- "What would someone who disagrees say?"
+- "Are you missing any key points?"
 
 ---
 
-## 8. Continuity & Long-Term Use
+## Copy-Paste Power Prompts
 
-### 🗄️ Save Outside the Chat
+### For Accuracy
+- "If you're uncertain about any facts, explicitly say so"
+- "Rate your confidence in this information 1-10 and explain why"  
+- "What evidence would contradict this view?"
+- "Cite sources for any factual claims"
+- "Be neutral — avoid persuasive tone"
 
-Build your personal toolkit:
+### For Better Responses
+- "What would make this more actionable?"
+- "What key points am I missing?"
+- "How would an expert in [field] improve this?"
+- "What could be improved here?"
+- "What's missing from this analysis?"
+- "Can you rewrite this to be clearer?"
 
-* Prompt templates that work
-* Outputs you may reuse
-* Notes on which prompts worked best
-* Summaries of complex conversations
+### For Context Management
+- "Summarize what we've accomplished so far"
+- "What's our main objective here?"
+- "Earlier you mentioned [X] - expand on that"
+- "Building on that insight from before..."
+- "Remember the example about [topic]?"
 
-### Snapshot & Summarize
+### For Research
+- "Show me multiple perspectives on this issue"
+- "What would critics of this approach say?"
+- "Compare these viewpoints and identify the strongest evidence for each"
+- "What are the strongest counterarguments?"
 
-When chats get long or messy:
-
-1. Copy the whole thread
-2. In a new chat: “Summarize this entire conversation”
-3. Save the summary for context in future threads
-
-### Chain Context Between Sessions
-
-Instead of starting from scratch, paste in your best previous output and build from there.
-
----
-
-## 9. Power Prompts (Copy-Paste)
-
-**Clarity & Accuracy:**
-
-* "If you’re not sure, say so."
-* "Cite your sources."
-* "Be neutral — avoid persuasive tone."
-
-**Improvements:**
-
-* "What would make this more useful?"
-* "What’s missing?"
-* "Can you rewrite this to be clearer?"
-
-**Context Checks:**
-
-* "Summarize what we’ve done so far."
-* "What are we trying to achieve?"
-* "Earlier you said X — build on that."
-
-**Challenges:**
-
-* "I don’t think that’s complete - check again?"
-* "What would someone who disagrees say?"
+### For Tone Control
+- "Write like you're explaining to a colleague"
+- "Use a neutral tone — no sales language"
+- "Match the tone of this: [paste sample]"
+- "Use conversational tone, avoid buzzwords"
 
 ---
 
-## Got a tactic that works?
+## Contributing
 
-Help grow the community playbook.
-Open a pull request or submit an issue!
+Got a technique that consistently works? The community needs your insights.
+
+**Ways to contribute:**
+- Open an [issue](https://github.com/YOUR-REPO/issues) with your tactic
+- Submit a pull request with real examples  
+- Share specific prompts that work reliably for you
+
+**What we're looking for:**
+- Practical techniques you've tested repeatedly
+- Specific examples of prompts and results
+- Tactics that work across different AI tools
+- Solutions to problems that aren't well-documented elsewhere
+
+---
+
+*This playbook grows through shared experience. Star ⭐ if useful, contribute if you've got tactics to share.*
